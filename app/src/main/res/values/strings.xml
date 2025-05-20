@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RecipeHub</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_my_recipes">My Recipes</string>
+    <string name="your_ultimate_recipe_companion">Your Ultimate Recipe Companion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
