@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_explore">
+
+    <fragment
+        android:id="@+id/navigation_explore"
+        android:name="com.example.recipehub.fragments.ExploreFragment"
+        android:label="@string/title_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_navigation_explore_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.example.recipehub.fragments.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_navigation_favorites_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_my_recipes"
+        android:name="com.example.recipehub.fragments.MyRecipesFragment"
+        android:label="@string/title_my_recipes"
+        tools:layout="@layout/fragment_my_recipes" >
+        <action
+            android:id="@+id/action_navigation_my_recipes_to_addRecipeFragment"
+            app:destination="@id/addRecipeFragment" />
+        <action
+            android:id="@+id/action_navigation_my_recipes_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailsFragment"
+        android:name="com.example.recipehub.fragments.RecipeDetailsFragment"
+        android:label="fragment_recipe_details"
+        tools:layout="@layout/fragment_recipe_details" />
+    <fragment
+        android:id="@+id/addRecipeFragment"
+        android:name="com.example.recipehub.fragments.AddRecipeFragment"
+        android:label="fragment_add_recipe"
+        tools:layout="@layout/fragment_add_recipe" />
+</navigation>
